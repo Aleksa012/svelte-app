@@ -117,11 +117,11 @@
     font-weight: bold;
     transition: all 0.4s;
     cursor: pointer;
-    border-radius: 2px;
-    box-shadow: 0 0 1rem brown;
+    border-radius: 8px;
   }
   .btn:hover {
     background-color: rgb(237, 94, 94);
+    color: white;
   }
 
   .link {

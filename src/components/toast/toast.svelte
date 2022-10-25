@@ -28,7 +28,7 @@
       </h2>
       <p>{message}</p>
     </div>
-    <div class="bar" />
+    <div class="bar" class:error={status === "invalid"} />
   </div>
 {/if}
 
@@ -86,9 +86,13 @@
     width: 0px;
     height: 0.4rem;
     border-radius: 0 0 10px 10px;
-    background-color: brown;
+    background-color: green;
     left: 0;
     bottom: 0;
     animation: expire 2s linear;
+  }
+
+  .bar.error {
+    background-color: red;
   }
 </style>
